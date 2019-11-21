@@ -9,9 +9,9 @@ public class BalancedBracketsTest {
     //TODO: add tests here
     @Test
     public void emptyTest() {
+
         assertEquals(true, true);
     }
-}
     @Test
     public void onlyBracketsReturnsTrue() {
         BalancedBrackets test_Class = new BalancedBrackets();
@@ -22,3 +22,42 @@ public void onlyBracketsReturnFalse() {
     BalancedBrackets test_Class = new BalancedBrackets();
     assertFalse(test_Class.hasBalancedBrackets("[]"));
 }
+    //for normal addition
+    @Test
+    public void testAdd1Plus1() {
+        int x  = 1 ; int y = 1;
+        assertEquals(2, test_Class.hasBalancedBrackets.add(x,y));
+    }
+    //if you are using 0 as default for null, make sure your class works in that case.
+    @Test
+    public void testAdd1Plus1()
+    {
+        int y = 1;
+        assertEquals(0, test_Class.hasBalancedBrackets.add(null,y));
+    }
+
+        @Test
+        public void testSimpleAddition() {
+        }
+
+
+        @Test
+        public void testPositiveNegativeAddition() {
+        }
+
+
+        @Test
+        public void testNegativePositiveAddition() {
+        }
+
+
+        @Test
+        public void testNegativeAddition() {
+        }
+
+
+        @Test
+        public void testOverflow() {
+        }
+}
+
