@@ -3,6 +3,11 @@ package test;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import static.org.junit.Assert.assertTrue;
+import static.org.junit.Assert.assertFalse;
+import static.org.junit.Assert.add;
+import org.junit.Before;
+import static.org.junit.Assert.assertEquals;
 
 public class BalancedBracketsTest {
 
@@ -30,8 +35,7 @@ public void onlyBracketsReturnFalse() {
     }
     //if you are using 0 as default for null, make sure your class works in that case.
     @Test
-    public void testAdd1Plus1()
-    {
+    public void testBracketsAdd1Plus1() {
         int y = 1;
         assertEquals(0, test_Class.hasBalancedBrackets.add(null,y));
     }
