@@ -59,5 +59,15 @@ public void onlyBracketsReturnFalse() {
         @Test
         public void testOverflow() {
         }
-}
+
+    @Before
+    public void createBalancedBrackets() {
+        test_Class.newBalancedBrackets();
+        }
+    @Test
+    public void onlyBracketsExpected() {
+        assertEquals(test_Class.actualBalancedBrackets("[]"));
+    }
+    }
+
 
